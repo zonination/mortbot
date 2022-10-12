@@ -63,7 +63,7 @@ def check_mail():
             # Skip non-messages and some accounts
             if not message.fullname.startswith("t4_") or message.author in ['mod_mailer', 'reddit', 'ModNewsletter']:
                 message.mark_read()
-                print('Marked as read: One of those annoying fucking Snoosletters.')
+                print('Marked as read: One of those annoying Snoosletters.')
                 continue
             
             # Skip non-subreddit messages
